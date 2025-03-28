@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #6333ae;
+}
+
+div {
+  .pinyon-script-regular {
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #aa7eee;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: 'MedievalSharp';font-size: 50px;
+  color: #5e1a41;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #e6f8b7;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #4CAF50; 
+  font-family: "UnifrakturMaguntia", cursive; 
+  font-size: 20px;
+   /*default green for Add and Complete buttons */
+}
+
+button:hover {
+  font-family: "UnifrakturMaguntia", cursive;
+  background-color: #45a049;  /* darker green on hover */
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #4440c0;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  font-family: "Pinyon Script", cursive ;
+  font-size: 30px;
+}
+
+.completed {
+  font-family: "UnifrakturMaguntia", cursive;
+  text-decoration: line-through;
+  color: #888;
+}
+.favorited {
+  font-family: "UnifrakturMaguntia", cursive;
+  text-decoration: underline;
+  color: #ffd900;
+ 
+}
+#todo-list li button:first-child {  /* targets the Favorite button */
+  font-family: "UnifrakturMaguntia", cursive;
+  background-color: #efa2ae;
+}
+
+#todo-list li button:first-child:hover {  /* favorite button hover state */
+  font-family: "UnifrakturMaguntia", cursive;
+  background-color: #ff8da1;
+}
+
+
+#todo-list li button:last-child {  /* targets the Delete button */
+  font-family: "UnifrakturMaguntia", cursive;
+  background-color: #ff4444;
+}
+
+#todo-list li button:last-child:hover {  /* Delete button hover state */
+  font-family: "UnifrakturMaguntia", cursive;
+  background-color: #cc0000;
+}
